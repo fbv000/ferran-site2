@@ -59,3 +59,14 @@ body {
   margin-top: 40px;
   font-weight: 500;
 }
+.animated-text {
+  display: flex;
+  gap: 0.05em;
+  overflow: hidden;
+}
+
+.animated-text span {
+  display: inline-block;
+  transform: translateY(100%);
+  opacity: 0;
+}
