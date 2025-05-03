@@ -1,0 +1,61 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #111;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 7rem;
+  font-weight: 900;
+  margin: 0 0 20px;
+}
+
+.intro {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+}
+
+.about p {
+  margin-bottom: 1rem;
+}
+
+.contacts h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.contacts li {
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+}
+
+.contacts li:last-child {
+  border-bottom: none;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contacts .thanks {
+  margin-top: 40px;
+  font-weight: 500;
+}
