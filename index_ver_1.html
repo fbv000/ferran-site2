@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferran — Advisor & Growth Strategist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1 class="animated-text">
+  <span>H</span><span>e</span><span>l</span><span>l</span><span>o</span>
+</h1>
+      <p class="intro"><strong>My name is Ferran.</strong></p>
+    </section>
+
+    <section class="about">
+      <p>Advisor to Founders and Teams | Driving Growth, Expansion, and Strategic Investment.</p>
+      <p>I combine strategy, execution, and endurance to help companies unlock international markets, scale operations, and close meaningful deals.</p>
+      <p>I work hands-on with leadership teams to align go-to-market execution with long-term vision — from positioning and partnerships to revenue models and team structure.</p>
+      <p>Currently collaborating with startups and scale-ups across AI, media, drones, and tech-enabled services.</p>
+    </section>
+
+    <section class="contacts">
+      <h2>Contacts</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:hello@brichs.xyz">hello@brichs.xyz</a></li>
+        <li><a href="https://www.linkedin.com/in/ferranbrichs" target="_blank">LinkedIn</a></li>
+      </ul>
+      <p class="thanks">Thank you 👋</p>
+    </section>
+  </main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+  gsap.to(".animated-text span", {
+    y: 0,
+    opacity: 1,
+    duration: 0.8,
+    ease: "power4.out",
+    stagger: 0.1
+  });
+
+  document.querySelectorAll(".animated-text span").forEach(letter => {
+    letter.addEventListener("mouseenter", () => {
+      gsap.to(letter, {
+        y: -10,
+        duration: 0.2,
+        ease: "power1.out",
+        yoyo: true,
+        repeat: 1
+      });
+    });
+  });
+</script>
+</body>
+
+</html>

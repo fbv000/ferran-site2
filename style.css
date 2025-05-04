@@ -8,7 +8,7 @@ body {
 }
 
 .hello {
-  position: fixed;
+  position: absolute;
   top: 10vh;
   left: 5vw;
   font-size: calc(10vw + 1rem);
@@ -28,7 +28,7 @@ body {
 
 .container {
   padding-top: 30vh;
-  padding-left: 6vw; /* Adjusted padding-left to shift content right */
+  padding-left: 6vw;
   padding-right: 5vw;
 }
 
@@ -84,6 +84,7 @@ body {
 
 @media (max-width: 768px) {
   .hello {
-    font-size: 15vw;
+    top: 8vh;
+    font-size: 18vw; /* Increased font-size for mobile */
   }
 }
